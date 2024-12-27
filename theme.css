@@ -1,0 +1,44 @@
+.theme-dark {
+  --Gray100: #0a0a0e;
+  --Gray200: #111219;
+  --Gray300: #161720;
+  --Gray400: #1d1f2b;
+  --Gray500: #232534;
+  --Gray600: #282a3b;
+  --Gray700: #6c708d;
+  --Gray800: #7f83a2;
+  --Gray900: #969ab3;
+  --Gray1000: #afb2c5;
+  --Gray1100: #cbcdd9;
+  --Gray1200: #e3e4eb;
+  --Gray1300: #f7f8fa;
+}
+
+.theme-light {
+  --Gray100: #fdfdfe;
+  --Gray200: #e6e7ed;
+  --Gray300: #cfd1dd;
+  --Gray400: #b9bccd;
+  --Gray500: #a3a7bd;
+  --Gray600: #8d92ad;
+  --Gray700: #797e9c;
+  --Gray800: #666a86;
+  --Gray900: #545870;
+  --Gray1000: #42465b;
+  --Gray1100: #303446;
+  --Gray1200: #222433;
+  --Gray1300: #13141c;
+}
+
+body {
+  --background-primary: var(--Gray200);
+  --background-primary-alt: var(--Gray200);
+  --background-secondary: var(--Gray100);
+  --background-secondary-alt: var(--Gray100);
+  --background-modifier-border: var(--Gray400);
+  --text-normal: var(--Gray1300);
+  --text-muted: var(--Gray900);
+  --text-faint: var(--Gray700);
+}
+
+/*# sourceMappingURL=theme.css.map */
