@@ -1,3 +1,7 @@
-@use './dark_theme.scss';
-@use './light_theme.scss';
-@use './var_reference.scss';
+@use './base_themes/dark_theme.scss';
+@use './base_themes/light_theme.scss';
+@use './utils/var_reference.scss';
+@use './overrides/general.scss';
+@use './components/headers.scss';
+@use './components/lists.scss';
+

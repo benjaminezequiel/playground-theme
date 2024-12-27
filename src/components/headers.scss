@@ -1,0 +1,39 @@
+body {
+	--h1-weight: 500;
+	--h2-weight: 600;
+	--h3-weight: 600;
+	--h4-weight: 600;
+	--h5-weight: 600;
+	--h6-weight: 600;
+	
+	--h4-color: var(--Gray1000);
+	--h5-color: var(--Gray900);
+	--h6-color: var(--Gray800);
+	--heading-spacing: 16px;
+}
+
+
+// .markdown-rendered {
+// 	h1, h2, h3, h4, h5, h6 {
+// 		margin: 0;
+// 		margin-block-start: 0;
+// 		margin-block-end: 0;
+// 		margin-bottom: 6px;
+// 	}
+// 	p {
+// 		margin: 0 !important;
+// 		margin-block-start: 0;
+// 		margin-block-end: 0;
+// 	}
+// }
+
+.cm-header.cm-header-5,
+.markdown-rendered h5 {
+	text-transform: uppercase;	
+}
+
+.cm-header.cm-header-6,
+.markdown-rendered h6 {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}

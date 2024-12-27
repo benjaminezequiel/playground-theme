@@ -1,7 +1,7 @@
 {
-	"name": "Playground",
-	"version": "0.0.1",
+	"name": "playground-theme",
+	"version": "1.0.0",
 	"minAppVersion": "1.0.0",
-	"author": "Ezben",
-	"authorUrl": "https://www.benjaminezequiel.com/"
+	"author": "Obsidian",
+	"authorUrl": "https://obsidian.md"
 }

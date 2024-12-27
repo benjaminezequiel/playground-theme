@@ -1,0 +1,13 @@
+body {
+	--list-padding-inline-start: 0px;
+	--list-indent-source: 0px;
+	--padding-inline-start: 0px;
+}
+
+.cm-formatting-list {
+	padding-inline-start: 0px;
+}
+
+.cm-fold-indicator {
+	inset-inline-end: 0.2rem;
+}

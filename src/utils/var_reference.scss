@@ -536,8 +536,8 @@ body {
     // --tag-padding-y: 0.25em;
     // --tag-radius: 2em;
     // --tag-weight: inherit;
-    // --titlebar-background: var(--background-secondary);
-    // --titlebar-background-focused: var(--background-secondary-alt);
+    --titlebar-background: var(--Gray200);
+    --titlebar-background-focused: var(--Gray100);
     // --titlebar-border-width: 0px;
     // --titlebar-border-color: var(--background-modifier-border);
     // --titlebar-text-color: var(--text-muted);
@@ -569,7 +569,7 @@ body {
     --background-primary-alt: var(--Gray200);
 
     --background-secondary: var(--Gray100);
-	--background-secondary-alt: var(--Gray100);
+	--background-secondary-alt: var(--Gray400);
 
     --background-modifier-border: var(--Gray400);
 
