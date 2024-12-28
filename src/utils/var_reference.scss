@@ -1,10 +1,3 @@
-
-
-// .workspace-leaf-resize-handle,
-// .workspace-tab-header-container-inner {
-// 	display: none;
-// }
-
 body {
     // --anim-duration-none: 0;
     // --anim-duration-superfast: 70ms;
@@ -536,8 +529,7 @@ body {
     // --tag-padding-y: 0.25em;
     // --tag-radius: 2em;
     // --tag-weight: inherit;
-    --titlebar-background: var(--Gray200);
-    --titlebar-background-focused: var(--Gray100);
+
     // --titlebar-border-width: 0px;
     // --titlebar-border-color: var(--background-modifier-border);
     // --titlebar-text-color: var(--text-muted);
@@ -565,14 +557,8 @@ body {
     // --accent-s: 88%;
     // --accent-l: 66%;
 
-    --background-primary: var(--Gray200);
-    --background-primary-alt: var(--Gray200);
 
-    --background-secondary: var(--Gray100);
-	--background-secondary-alt: var(--Gray400);
-
-    --background-modifier-border: var(--Gray400);
-
+    
     // --background-modifier-hover: var(--Gray200);
     // --background-modifier-active-hover: var(--Gray300);
     // --background-modifier-border-hover: var(--color-base-35);
@@ -585,9 +571,6 @@ body {
     // --background-modifier-message: rgba(0, 0, 0, 0.9);
     // --background-modifier-form-field: var(--color-base-00);
 
-    --text-normal: var(--Gray1300);
-    --text-muted: var(--Gray900);
-    --text-faint: var(--Gray700);
 
     // --text-on-accent: white;
     // --text-on-accent-inverted: black;

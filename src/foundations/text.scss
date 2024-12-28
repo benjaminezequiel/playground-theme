@@ -1,0 +1,26 @@
+body {
+  --text-normal: var(--gray-800);
+  --text-muted: var(--gray-700);
+  --text-faint: var(--gray-500);
+
+  // BOLD, ITALICS
+  --bold-modifier: 300;
+  .cm-strong, strong {
+    letter-spacing: 0.02em;
+  }
+
+  // HIGLIGHTS
+  
+  --text-highlight-bg: var(--yellow-200);
+  .cm-highlight, .markdown-rendered mark {
+    border-radius: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+
+  &.theme-dark {
+    --text-highlight-bg: var(--yellow-300);
+  }
+}
+
+
