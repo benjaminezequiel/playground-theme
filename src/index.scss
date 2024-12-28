@@ -4,9 +4,12 @@
 @use './components/lists.scss';
 @use './components/hider.scss';
 @use './components/note.scss';
+@use './components/callouts.scss';
+@use './components/tabs.scss';
 
 // @use './foundations/colors_oklch.scss'
 @use './foundations/colors/accent_colors.scss';
+
 @use './foundations/colors/light_theme.scss';
 @use './foundations/colors/dark_theme.scss';
 @use './foundations/surface.scss';

@@ -1,0 +1,31 @@
+.workspace-tab-header {
+  border-bottom: 1px solid var(--gray-75);
+}
+
+body {
+  --titlebar-height: 36px;
+  --header-height: 36px;
+}
+
+.is-hidden-frameless:not(.is-fullscreen) .workspace-tabs.mod-top-left-space .workspace-tab-header-container {
+  padding-left: 0;
+}
+.workspace-tab-header-container-inner {
+  padding-top: 0;
+  margin-top: -1px;
+  padding-left: 0 !important;
+}
+
+.workspace-tab-header-container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.workspace-tab-header {
+  &::before {
+    content: unset;
+  }
+  &::after {
+    content: unset;
+  }
+}
