@@ -1,3 +1,8 @@
 body {
-  --file-margins: var(--size-4-8) var(--size-4-8);
+  --file-margins: var(--size-4-10) var(--size-4-8);
+  --file-line-width: 700px;
 }
+
+// .markdown-preview-view {
+//   white-space: break-spaces;
+// }

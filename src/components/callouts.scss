@@ -61,10 +61,10 @@ body {  // ABSTRACT // TLDR // SUMMARY
 }
 
 body { // INFO
-  --callout-info: var(--gray-300);
+  --callout-info: var(--gray-400);
   .callout[data-callout="info"] {
-    --callout-title-color: var(--gray-400);
-    --callout-content: var(--gray-700);
+    --callout-title-color: var(--gray-900);
+    --callout-content: var(--gray-600);
   }
 }
 
@@ -127,7 +127,7 @@ body { // WARNING, ATTENTION, CAUTION
 body { // FAILURE, FAIL, MISSING
   --callout-fail: var(--red-300);
  
-  .callout,[data-callout="fail"],
+  .callout[data-callout="fail"],
   .callout[data-callout="failure"],
   .callout[data-callout="missing"] {
     --callout-title-color: var(--red-400);
@@ -162,14 +162,16 @@ body { // EXAMPLE
  }
 }
 
-body { // QUOTE
+body { // QUOTE, CITE
   --callout-quote: var(--gray-300);
   
-  .callout[data-callout="quote"] {
+  .callout[data-callout="quote"],
+  .callout[data-callout="cite"] {
     --callout-title-color: var(--gray-500);
     --callout-content: var(--gray-700);
   }   
 }
+
 // .callout-content p {
 //   margin-top: 6px !important;
 //   margin-bottom: 2px !important;

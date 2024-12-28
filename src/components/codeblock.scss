@@ -1,0 +1,10 @@
+body {
+    --code-radius: var(--radius-m)
+}
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock {
+    padding-inline-start: var(--size-4-6)
+}
+
+.cm-line.HyperMD-codeblock .code-block-flair {
+    color: var(--text-faint);
+}

@@ -1,0 +1,63 @@
+.sidebar-toggle-button.mod-left {
+    border-right: 1px solid var(--divider-color);
+}
+
+.nav-files-container {
+    padding: var(--size-4-2);
+}
+
+.tag-container {
+    padding: var(--size-4-2);
+}
+
+.outgoing-link-pane {
+    padding: var(--size-4-2);
+}
+
+.workspace-leaf-content .view-content {
+    padding: var(--size-4-2);
+}
+
+.workspace-leaf-content[data-type='outline'] .view-content {
+    padding-top: var(--size-4-2);
+}
+
+.is-flashing {
+    color: var(--text-inverse);
+    padding: 0 4px;
+}
+
+.theme-dark {
+    --interactive-normal: var(--gray-100);
+    --interactive-hover: var(--gray-200);
+    --interactive-accent: var(--blue-200);
+    --interactive-accent-hover: var(--blue-300);
+}
+
+.theme-light {
+    --interactive-normal: var(--gray-25)
+}
+// .workspace-tab-header-container {
+//     transition: height 200ms ease;
+//     height: 6px;
+//     > * {
+//         opacity: 0;
+//         transition: opacity 200ms ease;
+//     }
+//     &:hover {
+//         > * {
+//             opacity: 1;
+//         }
+
+//         height: var(--header-height);
+//     }
+// }
+
+// .workspace-tab-header-container-inner {
+//     margin: 0 !important;
+//     padding: var(--size-2-2) !important;
+// }
+
+// body {
+//     --tab-container-background: var(--gray-50)
+// }

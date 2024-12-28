@@ -1,0 +1,16 @@
+body {
+    --tag-background: var(--blue-200);
+    --tag-color: var(--blue-600);
+}
+
+.cm-formatting-hashtag {
+    color: rgb(from var(--tag-color) r g b / 0.6);
+    padding-right: var(--size-2-1);
+}
+
+// TODO: consider a series of custom styles for specific common used tags to help facilitate visaul identification
+ 
+// .cm-tag-books {
+//     --tag-background: var(--red-200);
+//     --tag-color: var(--red-500);
+// }

@@ -11,12 +11,13 @@ body {
 .mod-root .workspace-tab-header-container-inner {
   margin: 0;
   margin-top: -1px;
+  margin-bottom: -1px;
+
   padding: 0;
   padding-right: var(--size-4-2);
   
-  &:has(.workspace-tab-header.is-active) {
-    margin-bottom: -1px;
 
+  &:has(.workspace-tab-header.is-active) {
     .workspace-tab-header.is-active {
       border-bottom: 1px solid rgb(from var(--gray-100) r g b / 0.5);
     }
@@ -27,6 +28,7 @@ body {
   &:hover {
     border-radius: var(--radius-s);
   }
+  
 }
 .workspace-tab-header.is-active {
   box-shadow: 0 0 0 var(--tab-outline-width) var(--tab-outline-color) inset;
@@ -44,6 +46,7 @@ body {
 
 .workspace-tab-header-container {
   padding-left: 0;
+  
   padding-right: 0;
   // padding-top: 2px;
 
@@ -52,7 +55,7 @@ body {
   padding: var(--size-2-2);
 }
 .workspace-tab-header {
-  
+  border-bottom: 1px solid transparent;
   &::before {
     content: unset;
   }

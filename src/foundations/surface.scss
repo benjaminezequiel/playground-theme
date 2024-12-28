@@ -9,5 +9,19 @@ body {
   
   --titlebar-background: var(--gray-50);
   --titlebar-background-focused: var(--gray-75);
+  --background-modifier-border-focus: var(--gray-400);
+  --icon-color: var(--gray-400);
   // --background-secondary-alt: var(--gray-200); Não achei nenhum lugar que usa ainda
+}
+
+.theme-dark {
+  --background-modifier-form-field: var(--gray-25);
+  --background-modifier-border-hover: var(--gray-200)
+}
+select:focus, .dropdown:focus, button:focus-visible, button.mod-cta:focus-visible {
+  box-shadow: 0 0 0 2px var(--background-modifier-border-focus);
+}
+
+.checkbox-container {
+  transition: unset;
 }
