@@ -1,7 +1,20 @@
-.view-header {
-  display: none;
-}
+// .view-header {
+//   display: none;
+// }
+
+// .nav-header {
+//   display: none;
+// }
 
 .nav-header {
-  display: none;
+  align-items: flex-start;
+  justify-content: flex-start;
+  display: flex;
+  padding: var(--size-2-2);
+  width: 100%;
+  padding-top: calc(var(--size-4-2) + 1px); // align with sidebar icons
+
+  // idea of border that emulates light
+  // border-bottom: rgb(from var(--gray-25) r g b / 0.8) 1px solid;
+  // box-shadow: 0 -1px 0px 0px rgb(from var(--gray-100) r g b / 0.3) inset;
 }

@@ -1,3 +1,25 @@
+.theme-dark {
+    --nav-item-color-active: var(--gray-700);
+    --nav-item-background-active: var(--gray-100);
+    --modal-border-color: var(--gray-200)
+}
+
+// .vertical-tab-header {
+//     box-shadow: 4px 400px 160px var(--gray-50) inset !important ;
+// }
+
+.nav-file-title.is-active {
+    // IDEA: maybe add a specific indicator for active file?
+    // &::before {
+    //     content: '->';
+    //     width: 16px;
+    //     height: 16px;
+    //     position: absolute;
+    //     left: var(--size-2-3);
+    //     color: var(--gray-400);
+    // }
+}
+
 .sidebar-toggle-button.mod-left {
     border-right: 1px solid var(--divider-color);
 }
@@ -30,10 +52,15 @@
 .theme-dark {
     --interactive-normal: var(--gray-100);
     --interactive-hover: var(--gray-200);
-    --interactive-accent: var(--blue-200);
-    --interactive-accent-hover: var(--blue-300);
+    --interactive-accent: var(--sea-green-600);
+    --interactive-accent-hover: var(--sea-green-600);
+    --text-on-accent: var(--gray-25);
+    --input-font-weight: 600;
+    --checkbox-border-color: var(--gray-300)
 }
-
+.HyperMD-task-line[data-task="x"] {
+    color: var(--gray-400) !important;
+}
 .theme-light {
     --interactive-normal: var(--gray-25)
 }
@@ -61,3 +88,7 @@
 // body {
 //     --tab-container-background: var(--gray-50)
 // }
+
+.sidebar-toggle-button {
+    min-width: 40px;
+}

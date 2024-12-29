@@ -113,12 +113,13 @@ body {
   inset-inline-end: 0.2rem;
 }
 
-.view-header {
-  display: none;
-}
-
 .nav-header {
-  display: none;
+  align-items: flex-start;
+  justify-content: flex-start;
+  display: flex;
+  padding: var(--size-2-2);
+  width: 100%;
+  padding-top: calc(var(--size-4-2) + 1px);
 }
 
 body {
@@ -348,6 +349,12 @@ body {
   content: unset;
 }
 
+.theme-dark {
+  --nav-item-color-active: var(--gray-700);
+  --nav-item-background-active: var(--gray-100);
+  --modal-border-color: var(--gray-200) ;
+}
+
 .sidebar-toggle-button.mod-left {
   border-right: 1px solid var(--divider-color);
 }
@@ -380,12 +387,23 @@ body {
 .theme-dark {
   --interactive-normal: var(--gray-100);
   --interactive-hover: var(--gray-200);
-  --interactive-accent: var(--blue-200);
-  --interactive-accent-hover: var(--blue-300);
+  --interactive-accent: var(--sea-green-600);
+  --interactive-accent-hover: var(--sea-green-600);
+  --text-on-accent: var(--gray-25);
+  --input-font-weight: 600;
+  --checkbox-border-color: var(--gray-300) ;
+}
+
+.HyperMD-task-line[data-task=x] {
+  color: var(--gray-400) !important;
 }
 
 .theme-light {
   --interactive-normal: var(--gray-25) ;
+}
+
+.sidebar-toggle-button {
+  min-width: 40px;
 }
 
 body {
@@ -714,6 +732,10 @@ body .cm-highlight, body .markdown-rendered mark {
 body.theme-dark {
   --text-highlight-bg: var(--yellow-600);
   --highlight-text-color: var(--text-inverse);
+}
+
+.empty-state-action {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=theme.css.map */
