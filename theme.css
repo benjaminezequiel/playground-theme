@@ -324,10 +324,18 @@ body {
   border-radius: var(--radius-s);
 }
 
+.workspace-tab-header-new-tab {
+  margin-bottom: 1px;
+}
+
 .workspace-tab-header.is-active {
   box-shadow: 0 0 0 var(--tab-outline-width) var(--tab-outline-color) inset;
   box-shadow: unset;
+  outline: 1px solid var(--tab-outline-color);
   transition: border-radius 400ms ease;
+}
+.workspace-tab-header.is-active .workspace-tab-header-inner-close-button {
+  color: var(--gray-300);
 }
 
 .workspace-tab-header-container {
