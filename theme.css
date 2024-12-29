@@ -297,6 +297,17 @@ body {
   padding-left: 0;
 }
 
+.mod-sidedock .workspace-tab-header-container-inner {
+  margin: 0;
+  padding: var(--size-2-2);
+  height: 100%;
+}
+.mod-sidedock .workspace-tab-header-container-inner .workspace-tab-header .workspace-tab-header-inner {
+  padding-left: var(--size-2-3);
+  padding-right: var(--size-2-3);
+  height: 100%;
+}
+
 .mod-root .workspace-tab-header-container-inner {
   margin: 0;
   margin-top: -1px;
@@ -315,7 +326,6 @@ body {
 .workspace-tab-header.is-active {
   box-shadow: 0 0 0 var(--tab-outline-width) var(--tab-outline-color) inset;
   box-shadow: unset;
-  outline: 1px solid var(--tab-outline-color);
   transition: border-radius 400ms ease;
 }
 
