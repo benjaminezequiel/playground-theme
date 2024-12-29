@@ -4,9 +4,14 @@ body {
   --text-faint: var(--gray-500);
   --text-inverse: var(--gray-25);
 
+  --font-text: 'Inter';
+  --file-header-font: 'Inter';
+  
   // BOLD, ITALICS
+  --bold-modifier: 200;
   --bold-modifier: 300;
   --semibold-modifier: 200;
+  
   .cm-strong, strong {
     letter-spacing: 0.02em;
   }
@@ -32,4 +37,14 @@ body {
 
 .empty-state-action {
   cursor: pointer;
+}
+
+.theme-dark .HyperMD-footnote, span.cm-hmd-barelink.cm-hmd-footnote {
+  color: var(--gray-500);
+  --text-muted: var(--gray-500);
+}
+
+.theme-light .HyperMD-footnote, span.cm-hmd-barelink.cm-hmd-footnote {
+  color: var(--gray-400);
+  --text-muted: var(--gray-400);
 }

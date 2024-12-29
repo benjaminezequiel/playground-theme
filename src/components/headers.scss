@@ -1,11 +1,12 @@
 body {
-	--h1-font: 'Space Grotesk';
-	--h2-font: 'Space Grotesk';
-	--h3-font: 'Space Grotesk';
-	--h4-font: 'Space Grotesk';
-	--h5-font: 'Space Grotesk';
-	--h6-font: 'Space Grotesk';
-	--p-spacing: 8px;
+	--h1-font: 'Bricolage Grotesque';
+	--h2-font: 'Bricolage Grotesque';
+	--h3-font: 'Bricolage Grotesque';
+	--h4-font: 'Bricolage Grotesque';
+	--h5-font: 'Bricolage Grotesque';
+	--h6-font: 'Bricolage Grotesque';
+
+	
 }
 
 // .el-h1, .el-h2 {
@@ -22,35 +23,39 @@ body {
 // 	padding-bottom: calc(var(--line-height-normal) * 12px);
 // }
 
+.cm-s-obsidian .cm-line.HyperMD-header {
+	padding-bottom: var(--size-2-1);
+}
+
 .theme-dark {
-	--h1-weight: 450;
+	--h1-weight: 550;
 	--h2-weight: 500;
 	--h3-weight: 550;
-	--h4-weight: 600;
-	--h5-weight: 550;
-	--h6-weight: 600;
+	--h4-weight: 650;
+	--h5-weight: 600;
+	--h6-weight: 650;
 
 	--h1-color: var(--purple-400);
-	--h2-color: var(--pink-400);
-	--h3-color: var(--orange-500);
-	--h4-color: var(--red-400);
+	--h2-color: var(--pink);
+	--h3-color: var(--orange);
+	--h4-color: var(--red);
 	--h5-color: var(--gray-600);
 	--h6-color: var(--gray-600);
 	
 }
 
 .theme-light {
-	--h1-weight: 500;
-	--h2-weight: 500;
-	--h3-weight: 550;
-	--h4-weight: 550;
+	--h1-weight: 550;
+	--h2-weight: 550;
+	--h3-weight: 600;
+	--h4-weight: 650;
 	--h5-weight: 500;
 	--h6-weight: 600;
 
 	--h1-color: var(--purple-400);
-	--h2-color: var(--pink-400);
-	--h3-color: var(--orange-300);
-	--h4-color: var(--red-300);
+	--h2-color: var(--pink-300);
+	--h3-color: var(--orange);
+	--h4-color: var(--red);
 	--h5-color: var(--gray-400);
 	--h6-color: var(--gray-400);
 }
@@ -77,20 +82,6 @@ body {
 	text-wrap: balance;
 }
 
-.inline-title, .cm-header, 
-.markdown-rendered h1, 
-.markdown-rendered h2, 
-.markdown-rendered h3, 
-.markdown-rendered h4, 
-.markdown-rendered h5, 
-.markdown-rendered h6 {
-	font-feature-settings: 
-		'ss02' 1,
-		'ss02' 1,
-		'ss03' 1,
-		'ss04' 1,
-		'ss05' 1;
-}
 // .markdown-rendered h1, 
 // .markdown-rendered h2, 
 // .markdown-rendered h3, 
@@ -98,12 +89,13 @@ body {
 // .markdown-rendered h5, 
 // .markdown-rendered h6 {
 // 	padding-top: 9px !important;
-// 	font-family: 'Space Grotesk';
+// 	font-family: 'Bricolage Grotesque';
 // }
 
 // .HyperMD-header {
 // 	--p-spacing: 8px;
 // }
+
 
 .cm-formatting-header {
 	color: var(--gray-300);

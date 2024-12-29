@@ -8,3 +8,10 @@ body {
 .cm-line.HyperMD-codeblock .code-block-flair {
     color: var(--text-faint);
 }
+
+span.cm-inline-code {
+    --code-background: var(--gray-200);
+    --code-radius: var(--radius-s);
+    padding-left: var(--size-2-2) !important;
+    padding-right: var(--size-2-2) !important;
+}

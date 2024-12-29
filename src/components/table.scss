@@ -6,3 +6,18 @@ body {
 //     border-radius: var(--radius-m);
 //     overflow: hidden;
 // }
+
+
+.markdown-rendered thead tr > th {
+    border-bottom: 1px solid var(--gray-200);
+}
+
+.table-view-th {
+    > * {
+        font-size: 1em !important;
+    }
+    .dataview.small-text {
+        color: var(--gray-500);
+        font-weight: 400;
+    }
+}

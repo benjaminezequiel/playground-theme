@@ -10,14 +10,20 @@
 
 @use './components/table.scss';
 
+@use './components/canvas.scss';
+
+
 @use './components/tag.scss';
 @use './components/codeblock.scss';
-// @use './foundations/colors_oklch.scss'
+
+// @use './foundations/type/space_grotesk.scss';
+@use './foundations/type/bricolage.scss';
+@use './foundations/type/inter.scss';
+
+
 @use './foundations/colors/accent_colors.scss';
-
-@use './foundations/type/space_grotesk.scss';
-
 @use './foundations/colors/light_theme.scss';
 @use './foundations/colors/dark_theme.scss';
+
 @use './foundations/surface.scss';
 @use './foundations/text.scss';
