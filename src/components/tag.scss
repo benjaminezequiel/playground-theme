@@ -4,7 +4,7 @@ body {
 }
 
 .cm-formatting-hashtag {
-    color: rgb(from var(--tag-color) r g b / 0.6);
+    color: color-mix(in srgb, var(--tag-color) 60%, transparent);
     padding-right: var(--size-2-1);
 }
 

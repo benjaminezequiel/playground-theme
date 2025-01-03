@@ -32,7 +32,8 @@ body {
   
   &:has(.workspace-tab-header.is-active) {
     .workspace-tab-header.is-active {
-      border-bottom: 1px solid rgb(from var(--gray-100) r g b / 0.5);
+      border-bottom: 1px solid;
+      border-color: color-mix(in srgb, var(--gray-100) 50%, transparent);
     }
   }
 }

@@ -131,8 +131,9 @@ body {
   --embed-block-shadow-hover: 0;
 }
 body .callout {
-  background-color: rgb(from var(--callout-color) r g b/0.2);
-  border: rgb(from var(--callout-color) r g b/0.5) 1px solid;
+  background-color: color-mix(in srgb, var(--callout-color) 20%, transparent);
+  border: 1px solid;
+  border-color: color-mix(in srgb, var(--callout-color) 60%, transparent);
   color: var(--callout-color);
   display: flex;
   flex-direction: column;
@@ -310,7 +311,8 @@ body {
   padding-right: var(--size-4-2);
 }
 .mod-root .workspace-tab-header-container-inner:has(.workspace-tab-header.is-active) .workspace-tab-header.is-active {
-  border-bottom: 1px solid rgb(from var(--gray-100) r g b/0.5);
+  border-bottom: 1px solid;
+  border-color: color-mix(in srgb, var(--gray-100) 50%, transparent);
 }
 
 .workspace-tab-header-inner:hover {
@@ -439,7 +441,7 @@ body {
 }
 
 .cm-formatting-hashtag {
-  color: rgb(from var(--tag-color) r g b/0.6);
+  color: color-mix(in srgb, var(--tag-color) 60%, transparent);
   padding-right: var(--size-2-1);
 }
 

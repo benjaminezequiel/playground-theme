@@ -11,8 +11,9 @@ body {
     --embed-block-shadow-hover: 0;
 
     .callout {
-      background-color: rgb(from var(--callout-color) r g b / 0.20);
-      border: rgb(from var(--callout-color) r g b / 0.5) 1px solid;
+      background-color: color-mix(in srgb, var(--callout-color) 20%, transparent);
+      border: 1px solid;
+      border-color: color-mix(in srgb, var(--callout-color) 60%, transparent);
       // box-shadow: rgb(from var(--callout-color) r g b / 1) inset 0 2px 24px -16px;
 
       color: var(--callout-color);
