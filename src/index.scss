@@ -17,8 +17,8 @@
 @use './components/codeblock.scss';
 
 // @use './foundations/type/space_grotesk.scss';
+// @use './foundations/type/inter.scss'; -> already loaded by Obsidian
 @use './foundations/type/bricolage.scss';
-@use './foundations/type/inter.scss';
 
 
 @use './foundations/colors/accent_colors.scss';
