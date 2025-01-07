@@ -14,8 +14,8 @@ A modern, playful Obsidian theme focused on visual hierarchy and clean typograph
 
 Support includes both desktop and mobile platforms, making it ideal for users who want a consistent experience across devices.
 
-> [!NOTE] Work In progress
-> Additional customization options through `cssClasses`, including enhanced Dataview tables and Tasks plugin styling (custom task statuses and query visualization).
+> [!IMPORTANT] 
+> This theme is a work in progress! There is additional customization options planned through `cssClasses`, including enhanced Dataview tables and Tasks plugin styling (custom task statuses and query visualization).
 
 ---
 
