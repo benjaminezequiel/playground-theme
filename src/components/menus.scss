@@ -52,9 +52,9 @@
 .theme-dark {
     --interactive-normal: var(--gray-100);
     --interactive-hover: var(--gray-200);
-    --interactive-accent: var(--sea-green-600);
-    --interactive-accent-hover: var(--sea-green-600);
-    --text-on-accent: var(--gray-25);
+    // --interactive-accent: var(--sea-green-600);
+    // --interactive-accent-hover: var(--sea-green-600);
+    // --text-on-accent: var(--gray-25);
     --input-font-weight: 600;
     --checkbox-border-color: var(--gray-300)
 }
