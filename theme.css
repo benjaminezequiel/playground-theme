@@ -760,7 +760,7 @@ body {
   --text-muted: var(--gray-700);
   --text-faint: var(--gray-500);
   --text-inverse: var(--gray-25);
-  --font-text: "Inter";
+  --font-text-theme: "Inter";
   --file-header-font: "Inter";
   --bold-modifier: 200;
   --bold-modifier: 300;
