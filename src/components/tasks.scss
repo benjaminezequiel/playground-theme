@@ -1,0 +1,13 @@
+.input[data-task="k"]:checked {
+  color: red !important;
+}
+
+li[data-task="k"]>input:checked {
+  color: red;
+  transform: translate(32px);
+}
+
+li[data-task="k"]>p>input:checked {
+  color: red;
+  transform: translate(32px);
+}

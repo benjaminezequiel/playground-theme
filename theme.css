@@ -461,6 +461,20 @@ span.cm-inline-code {
   padding-right: var(--size-2-2) !important;
 }
 
+.input[data-task=k]:checked {
+  color: red !important;
+}
+
+li[data-task=k] > input:checked {
+  color: red;
+  transform: translate(32px);
+}
+
+li[data-task=k] > p > input:checked {
+  color: red;
+  transform: translate(32px);
+}
+
 @font-face {
   font-family: "Bricolage Grotesque";
   /* Add other properties here, as needed. For example: */
