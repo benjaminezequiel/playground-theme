@@ -34,6 +34,11 @@
   border-radius: 8px;
   padding: 6px;
 
+  code {
+    height: fit-content;
+    padding: 0.1em 0.25em;
+  }
+
   li:has(input[type=checkbox]:hover) {
     background-color: var(--gray-100);
   }
