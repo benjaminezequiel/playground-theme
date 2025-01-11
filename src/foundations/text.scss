@@ -1,14 +1,13 @@
 body {
-  --text-normal: var(--gray-800);
-  --text-muted: var(--gray-700);
+  --text-normal: var(--gray-700);
+  --text-muted: var(--gray-600);
   --text-faint: var(--gray-500);
   --text-inverse: var(--gray-25);
 
   --font-text-theme: 'Inter';
   --file-header-font: 'Inter';
-  
-  // --text-decoration-line: none;
   --link-decoration: none;
+
   // BOLD, ITALICS
   --bold-modifier: 200;
   --bold-modifier: 300;

@@ -1884,8 +1884,8 @@ select:focus, .dropdown:focus, button:focus-visible, button.mod-cta:focus-visibl
 }
 
 body {
-  --text-normal: var(--gray-800);
-  --text-muted: var(--gray-700);
+  --text-normal: var(--gray-700);
+  --text-muted: var(--gray-600);
   --text-faint: var(--gray-500);
   --text-inverse: var(--gray-25);
   --font-text-theme: "Inter";
