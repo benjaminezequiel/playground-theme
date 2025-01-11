@@ -30,6 +30,8 @@
 }
 
 .task-list-item.plugin-tasks-list-item {
+  padding-top: 0;
+  padding-bottom: 0;
   margin-inline-start: 0;
   border-radius: 4px;
   padding-left: calc(var(--list-indent) - 8px);
@@ -38,7 +40,7 @@
 
   .task-list-item-checkbox {
     margin-right: 8px;
-    margin-top: 2px;
+    inset: 0;
   }
 }
 
