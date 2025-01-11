@@ -2,12 +2,6 @@ body {
     --table-header-background: var(--gray-100);
 }
 
-// .table-editor {
-//     border-radius: var(--radius-m);
-//     overflow: hidden;
-// }
-
-
 .markdown-rendered thead tr > th {
     border-bottom: 1px solid var(--gray-200);
 }
@@ -21,3 +15,147 @@ body {
         font-weight: 400;
     }
 }
+
+@mixin table-styled {
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: var(--gray-75);
+    border: var(--gray-200) 1px solid;
+
+    tr {
+        margin: 0;
+        &:not(:last-child) {
+            border-bottom: 1px solid var(--gray-100);
+        }
+    }
+    
+    td {
+        padding: var(--size-2-3) var(--size-4-2);
+    }
+
+    .table-view-th {
+        display: flex;
+        align-items: baseline;
+        gap: 2px;
+    }
+
+    thead th {
+        background-color: var(--gray-100);
+    }
+
+    thead tr .table-view-th {
+        padding: var(--size-2-3) var(--size-4-2) var(--size-2-3) var(--size-4-2);
+
+        .small-text {
+            font-size: 12px !important;
+        }
+    }
+
+    thead, tr, th,
+    tbody, tr, td {
+        width: 100%;
+        display: flex;
+    }
+
+    tbody {
+        flex-direction: column;
+    }
+
+    .table-view-th {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    & tr:has(.internal-link:hover) { 
+        background-color: var(--gray-75);
+    }
+}
+
+.table-styled table.dataview.table-view-table {
+    @include table-styled();
+}
+
+.table-styled--unique-lines table.dataview.table-view-table{
+    @include table-styled();
+    border: unset;
+    background-color: unset;
+    thead {
+        tr {
+            border: 1px solid var(--gray-200);
+            border-radius: 6px;
+            overflow: hidden;
+            th {
+                border-bottom: unset;
+            }
+        }
+        margin-bottom: 4px;
+    }
+    tbody.table-view-tbody {
+        gap: 4px;
+        tr {
+            border: 1px solid var(--gray-100);
+            border-radius: 6px;
+        }
+    }
+}
+
+.table-nowrap table.dataview.table-view-table {
+    td, th {
+        & > * {
+            text-wrap: nowrap;
+            white-space: nowrap;
+            overflow-wrap: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+    }
+}
+
+.table-tabular table.dataview.table-view-table {
+    & > * {
+        font-variant-numeric: tabular-nums;
+    }
+}
+
+.table-col-lines table.dataview.table-view-table {
+    td:not(:last-child) {
+        border-right: 1px solid var(--gray-100);
+    }
+    th:not(:last-child) {
+        border-right: 1px solid var(--gray-200);;
+    }
+}
+
+$column-sizes: (
+  'xs': 32px,
+  'sm': 64px,
+  'md': 128px,
+  'lg': 240px,
+  'xl': 320px
+);
+
+// Create the mixin
+@mixin column-width-classes($column-number: 1) {
+  @each $size, $width in $column-sizes {
+    .col-#{$column-number}-#{$size} table.dataview.table-view-table {
+      .table-view-tr-header th:nth-child(#{$column-number}),
+      .table-view-tbody td:nth-child(#{$column-number}) {
+        min-width: $width;
+        width: $width;
+        max-width: $width;
+      }
+    }
+  }
+}
+
+@include column-width-classes(1);
+@include column-width-classes(2);
+@include column-width-classes(3);
+@include column-width-classes(4);
+@include column-width-classes(5);
+@include column-width-classes(6);
+@include column-width-classes(7);
+@include column-width-classes(8);
+@include column-width-classes(9);
