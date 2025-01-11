@@ -1,0 +1,26 @@
+.contains-task-list.plugin-tasks-query-result {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+}
+
+.task-list-item.plugin-tasks-list-item {
+  // --tasks-bg-red: color-mix(in oklch, var(--red-100), transparent);
+  border-radius: 6px;
+  margin-inline-start: 0;
+  padding-left: var(--list-indent);
+
+  // &[data-task="!"] {
+  //   background-color: var(--tasks-bg-red);
+  // }
+  // &[data-task="l"] {
+  //   background-color: var(--tasks-bg-red);
+  // }
+  // &[data-task="c"] {
+  //   background-color: var(--tasks-bg-red);
+  // }
+  // &[data-task="d"] {
+  //   background-color: var(--tasks-bg-red);
+  // }
+}

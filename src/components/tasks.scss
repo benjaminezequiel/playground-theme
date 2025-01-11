@@ -67,6 +67,19 @@ body {
 }
 
 @mixin task-type($letter, $color, $icon, $rotate: 0, $decorate: false) {
+  .tasks-callout .task-list-item.plugin-tasks-list-item {
+    &[data-task="#{$letter}"] {
+      background-color: color-mix(in srgb, $color, var(--gray-50) 85%);
+      border: color-mix(in srgb, $color, var(--gray-50) 50%) 1px solid;
+    }
+  }
+  
+  .tasks-highlight .task-list-item.plugin-tasks-list-item {
+    &[data-task="#{$letter}"] {
+      background-color: color-mix(in srgb, $color, var(--gray-50) 85%);
+
+    }
+  }
   input[data-task="#{$letter}"],
   li[data-task="#{$letter}"] > input,
   li[data-task="#{$letter}"] > p > input {

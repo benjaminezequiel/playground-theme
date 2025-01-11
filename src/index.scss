@@ -18,6 +18,8 @@
 @use './components/codeblock.scss';
 @use './components/tasks.scss';
 
+@use './plugins/tasks-plugin.scss';
+
 // @use './foundations/type/space_grotesk.scss';
 // @use './foundations/type/inter.scss'; -> already loaded by Obsidian
 @use './foundations/type/bricolage.scss';
