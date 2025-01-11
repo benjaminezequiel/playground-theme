@@ -6,3 +6,8 @@
 .plugin-sync {
   order: 1; // Ensures sync icon is always at the end of the flex container
 }
+
+body {
+  --scrollbar-thumb-bg: var(--gray-100);
+  --scrollbar-active-thumb-bg: var(--gray-200);
+}

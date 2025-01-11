@@ -11,6 +11,11 @@ body {
 }
 
 body {
+  --scrollbar-thumb-bg: var(--gray-100);
+  --scrollbar-active-thumb-bg: var(--gray-200);
+}
+
+body {
   --h1-font: "Bricolage Grotesque";
   --h2-font: "Bricolage Grotesque";
   --h3-font: "Bricolage Grotesque";
@@ -399,6 +404,10 @@ body {
 
 .sidebar-toggle-button {
   min-width: 40px;
+}
+
+.nav-buttons-container {
+  justify-content: flex-start;
 }
 
 body {
