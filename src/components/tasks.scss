@@ -172,3 +172,10 @@ body {
   @include task-type('u', var(--checklist-green-color), $icon-up);
   @include task-type('d', var(--checklist-red-color), $icon-up, 180);
 }
+
+.task-list-item {
+  display: flex;
+  > * {
+    height: fit-content;
+  }
+}
