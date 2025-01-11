@@ -1466,6 +1466,9 @@ body li[data-task=d] > p > input:checked {
   border-radius: 8px;
   padding: 6px;
 }
+.tasks-styled .contains-task-list.plugin-tasks-query-result .task-list-item-checkbox {
+  transform: translateY(1px);
+}
 .tasks-styled .contains-task-list.plugin-tasks-query-result code {
   height: fit-content;
   padding: 0.1em 0.25em;
@@ -1502,10 +1505,21 @@ body li[data-task=d] > p > input:checked {
 .tasks-styled .contains-task-list.plugin-tasks-query-result .tasks-backlink {
   color: transparent;
 }
+.tasks-styled .contains-task-list.plugin-tasks-query-result .tasks-list-text {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+}
 
+.tasks-styled--unique-lines .contains-task-list.plugin-tasks-query-result code {
+  padding: 0.1em 0.25em;
+}
 .tasks-styled--unique-lines .contains-task-list.plugin-tasks-query-result li[data-task=x] {
   opacity: 0.75;
   color: var(--gray-300);
+}
+.tasks-styled--unique-lines .contains-task-list.plugin-tasks-query-result .task-list-item-checkbox {
+  transform: translateY(1px);
 }
 .tasks-styled--unique-lines .contains-task-list.plugin-tasks-query-result .task-list-item.plugin-tasks-list-item {
   border: var(--gray-100) 1px solid;
@@ -1542,6 +1556,11 @@ body li[data-task=d] > p > input:checked {
 .tasks-styled--unique-lines .contains-task-list.plugin-tasks-query-result .tasks-backlink {
   color: transparent;
 }
+.tasks-styled--unique-lines .contains-task-list.plugin-tasks-query-result .tasks-list-text {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+}
 
 .dataview.inline-field {
   border: 1px solid var(--gray-100);
@@ -1567,7 +1586,7 @@ body li[data-task=d] > p > input:checked {
   max-width: fit-content;
   display: flex;
   flex-direction: row;
-  gap: 4px;
+  gap: 6px;
 }
 
 @font-face {
