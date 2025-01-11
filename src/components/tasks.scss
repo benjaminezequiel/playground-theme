@@ -22,14 +22,12 @@ $icon-up: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' widt
 // icon-down is up rotated
 
 body {
-  input[type=checkbox] {
-    border: 2px solid var(--checkbox-border-color);
-  }
   --checkbox-radius: 100%;
   --checkbox-quote-color: var(--gray-400);
   --checkbox-color-hover: var(--color-accent);
 }
 .theme-dark {
+  --checkbox-color: var(--sea-green-500);
   --checklist-done-color: var(--sea-green-500);
   --checklist-orange-color: var(--orange-400);
   --checklist-green-color: var(--green-400);
@@ -38,6 +36,7 @@ body {
   
 }
 .theme-light {
+  --checkbox-color: var(--sea-green-300);
   --checklist-done-color: var(--sea-green-300);
   --checklist-orange-color: var(--orange-200);
   --checklist-green-color: var(--green-300);
@@ -77,7 +76,6 @@ body {
   .tasks-highlight .task-list-item.plugin-tasks-list-item {
     &[data-task="#{$letter}"] {
       background-color: color-mix(in srgb, $color, var(--gray-50) 85%);
-
     }
   }
   input[data-task="#{$letter}"],

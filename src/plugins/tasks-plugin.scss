@@ -7,10 +7,13 @@
 
 .task-list-item.plugin-tasks-list-item {
   // --tasks-bg-red: color-mix(in oklch, var(--red-100), transparent);
-  border-radius: 6px;
   margin-inline-start: 0;
-  padding-left: var(--list-indent);
+  border-radius: 4px;
+  padding-left: calc(var(--list-indent) - 8px);
 
+  .task-list-item-checkbox {
+    margin-right: 8px;
+  }
   // &[data-task="!"] {
   //   background-color: var(--tasks-bg-red);
   // }
@@ -23,4 +26,122 @@
   // &[data-task="d"] {
   //   background-color: var(--tasks-bg-red);
   // }
+}
+
+.tasks-styled .contains-task-list.plugin-tasks-query-result {
+  background-color: var(--gray-75);
+  border: var(--gray-200) 1px solid;
+  border-radius: 8px;
+  padding: 6px;
+
+  li:has(input[type=checkbox]:hover) {
+    background-color: var(--gray-100);
+  }
+  li[data-task="x"] {
+    opacity: 0.75;
+    color: var(--gray-300);
+  }
+  .task-list-item.plugin-tasks-list-item {
+    display: flex;
+    align-items: center;
+  }
+  .tasks-list-text,.task-extras {
+    width: 100%;
+    text-wrap: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+  }
+  .task-extras {
+    text-align: right;
+  }
+  > * {
+    text-wrap: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+  }
+  .tasks-backlink {
+    color: transparent;
+  }
+}
+
+
+.tasks-styled--unique-lines .contains-task-list.plugin-tasks-query-result {
+  
+  
+ 
+  
+  li[data-task="x"] {
+    opacity: 0.75;
+    color: var(--gray-300);
+  }
+
+  .task-list-item.plugin-tasks-list-item {
+    border: var(--gray-100) 1px solid;
+    background-color: var(--gray-75);
+    display: flex;
+    align-items: center;
+    
+    border-radius: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: calc(var(--list-indent) - 4px);
+    padding-right: 8px;
+
+    &:hover {
+      background-color: var(--gray-100);
+    }
+  }
+  .tasks-list-text,.task-extras {
+    width: 100%;
+    text-wrap: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+  }
+  .task-extras {
+    text-align: right;
+  }
+  > * {
+    text-wrap: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+  }
+  .tasks-backlink {
+    color: transparent;
+  }
+}
+
+.dataview.inline-field {
+  border: 1px solid var(--gray-100);
+  border-radius: 8px;
+  font-size: 14px;
+  display: inline-flex;
+}
+.dataview.inline-field-key {
+  border-radius: 8px 0px 0px 8px;
+  overflow: hidden;
+  background-color: var(--gray-100);
+  font-size: 14px;
+}
+
+.dataview.inline-field-value {
+  border-radius: 0px 8px 8px 0px;
+  overflow: hidden;
+  background-color: var(--gray-200);
+}
+
+.task-description {
+  > * {
+    max-width: fit-content;
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+  }
 }

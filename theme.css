@@ -418,7 +418,7 @@ body {
 }
 
 .table-styled table.dataview.table-view-table {
-  border-radius: 6px;
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -465,7 +465,7 @@ body {
 }
 
 .table-styled--unique-lines table.dataview.table-view-table {
-  border-radius: 6px;
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -909,11 +909,9 @@ body {
   --checkbox-quote-color: var(--gray-400);
   --checkbox-color-hover: var(--color-accent);
 }
-body input[type=checkbox] {
-  border: 2px solid var(--checkbox-border-color);
-}
 
 .theme-dark {
+  --checkbox-color: var(--sea-green-500);
   --checklist-done-color: var(--sea-green-500);
   --checklist-orange-color: var(--orange-400);
   --checklist-green-color: var(--green-400);
@@ -922,6 +920,7 @@ body input[type=checkbox] {
 }
 
 .theme-light {
+  --checkbox-color: var(--sea-green-300);
   --checklist-done-color: var(--sea-green-300);
   --checklist-orange-color: var(--orange-200);
   --checklist-green-color: var(--green-300);
@@ -1453,9 +1452,118 @@ body li[data-task=d] > p > input:checked {
 }
 
 .task-list-item.plugin-tasks-list-item {
-  border-radius: 6px;
   margin-inline-start: 0;
-  padding-left: var(--list-indent);
+  border-radius: 4px;
+  padding-left: calc(var(--list-indent) - 8px);
+}
+.task-list-item.plugin-tasks-list-item .task-list-item-checkbox {
+  margin-right: 8px;
+}
+
+.tasks-styled .contains-task-list.plugin-tasks-query-result {
+  background-color: var(--gray-75);
+  border: var(--gray-200) 1px solid;
+  border-radius: 8px;
+  padding: 6px;
+}
+.tasks-styled .contains-task-list.plugin-tasks-query-result li:has(input[type=checkbox]:hover) {
+  background-color: var(--gray-100);
+}
+.tasks-styled .contains-task-list.plugin-tasks-query-result li[data-task=x] {
+  opacity: 0.75;
+  color: var(--gray-300);
+}
+.tasks-styled .contains-task-list.plugin-tasks-query-result .task-list-item.plugin-tasks-list-item {
+  display: flex;
+  align-items: center;
+}
+.tasks-styled .contains-task-list.plugin-tasks-query-result .tasks-list-text, .tasks-styled .contains-task-list.plugin-tasks-query-result .task-extras {
+  width: 100%;
+  text-wrap: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+.tasks-styled .contains-task-list.plugin-tasks-query-result .task-extras {
+  text-align: right;
+}
+.tasks-styled .contains-task-list.plugin-tasks-query-result > * {
+  text-wrap: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+.tasks-styled .contains-task-list.plugin-tasks-query-result .tasks-backlink {
+  color: transparent;
+}
+
+.tasks-styled--unique-lines .contains-task-list.plugin-tasks-query-result li[data-task=x] {
+  opacity: 0.75;
+  color: var(--gray-300);
+}
+.tasks-styled--unique-lines .contains-task-list.plugin-tasks-query-result .task-list-item.plugin-tasks-list-item {
+  border: var(--gray-100) 1px solid;
+  background-color: var(--gray-75);
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: calc(var(--list-indent) - 4px);
+  padding-right: 8px;
+}
+.tasks-styled--unique-lines .contains-task-list.plugin-tasks-query-result .task-list-item.plugin-tasks-list-item:hover {
+  background-color: var(--gray-100);
+}
+.tasks-styled--unique-lines .contains-task-list.plugin-tasks-query-result .tasks-list-text, .tasks-styled--unique-lines .contains-task-list.plugin-tasks-query-result .task-extras {
+  width: 100%;
+  text-wrap: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+.tasks-styled--unique-lines .contains-task-list.plugin-tasks-query-result .task-extras {
+  text-align: right;
+}
+.tasks-styled--unique-lines .contains-task-list.plugin-tasks-query-result > * {
+  text-wrap: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+.tasks-styled--unique-lines .contains-task-list.plugin-tasks-query-result .tasks-backlink {
+  color: transparent;
+}
+
+.dataview.inline-field {
+  border: 1px solid var(--gray-100);
+  border-radius: 8px;
+  font-size: 14px;
+  display: inline-flex;
+}
+
+.dataview.inline-field-key {
+  border-radius: 8px 0px 0px 8px;
+  overflow: hidden;
+  background-color: var(--gray-100);
+  font-size: 14px;
+}
+
+.dataview.inline-field-value {
+  border-radius: 0px 8px 8px 0px;
+  overflow: hidden;
+  background-color: var(--gray-200);
+}
+
+.task-description > * {
+  max-width: fit-content;
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
 }
 
 @font-face {
