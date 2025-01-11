@@ -1,13 +1,13 @@
 @use './utils/var_reference.scss';
 
-// @use './overrides/general.scss';
-// @use './components/headers.scss';
-// @use './components/lists.scss';
+@use './overrides/general.scss';
+@use './components/headers.scss';
+@use './components/lists.scss';
 // @use './components/hider.scss';
-// @use './components/note.scss';
-// @use './components/callouts.scss';
-// @use './components/tabs.scss';
-// @use './components/menus.scss';
+@use './components/note.scss';
+@use './components/callouts.scss';
+@use './components/tabs.scss';
+@use './components/menus.scss';
 
 @use './components/table.scss';
 

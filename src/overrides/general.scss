@@ -2,3 +2,7 @@
 // .workspace-tab-header-container-inner {
 // 	display: none;
 // }
+
+.plugin-sync {
+  order: 1; // Ensures sync icon is always at the end of the flex container
+}

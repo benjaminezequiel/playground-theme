@@ -7,6 +7,8 @@ body {
   --font-text-theme: 'Inter';
   --file-header-font: 'Inter';
   
+  // --text-decoration-line: none;
+  --link-decoration: none;
   // BOLD, ITALICS
   --bold-modifier: 200;
   --bold-modifier: 300;
@@ -48,3 +50,4 @@ body {
   color: var(--gray-400);
   --text-muted: var(--gray-400);
 }
+

@@ -549,10 +549,10 @@ body {
 
     // --text-on-accent: white;
     // --text-on-accent-inverted: black;
-    // --text-error: var(--color-red);
-    // --text-warning: var(--color-orange);
-    // --text-success: var(--color-green);
-    // --text-selection: hsla(var(--color-accent-hsl), 0.2);
+    --text-error: var(--red-400);
+    --text-warning: var(--orange-400);
+    --text-success: var(--green-400);
+    --text-selection: hsla(var(--color-accent-hsl), 0.2);
     // --text-highlight-bg-rgb: 255, 208, 0;
     // --text-highlight-bg: rgba(var(--text-highlight-bg-rgb), 0.4);
     // --text-accent: var(--color-accent);
