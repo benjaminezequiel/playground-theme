@@ -1,0 +1,123 @@
+:root {
+  --ease-out: cubic-bezier(0.33, 1, 0.68, 1);
+}
+$icon-incomplete: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='19' height='19' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-loader'%3E%3Cpath d='M12 2v4'/%3E%3Cpath d='m16.2 7.8 2.9-2.9'/%3E%3Cpath d='M18 12h4'/%3E%3Cpath d='m16.2 16.2 2.9 2.9'/%3E%3Cpath d='M12 18v4'/%3E%3Cpath d='m4.9 19.1 2.9-2.9'/%3E%3Cpath d='M2 12h4'/%3E%3Cpath d='m4.9 4.9 2.9 2.9'/%3E%3C/svg%3E");
+
+.metadata-property-value,
+.metadata-property-key {
+  border: unset;
+  // border-radius: 4px;
+  &:focus,
+  &:focus-within {
+    background-color: var(--gray-100);
+    outline: var(--gray-200) 1px solid;
+  }
+}
+
+.metadata-property .multi-select-pill {
+  background-color: var(--gray-200);
+  padding: 2px 4px 2px 8px;
+
+  &:focus {
+    outline: var(--blue-500) 1px solid;
+    outline-offset: 2px;
+    &::after {
+      content: unset;
+    }
+  }
+  .multi-select-pill-remove-button {
+    color: var(--gray-400);
+  }
+}
+
+.metadata-property .multi-select-pill:hover {
+  background-color: var(--gray-300);
+}
+
+.metadata-property {
+  transition: var(--ease-out) 150ms background-color;
+  border-radius: 6px;
+  outline: color-mix(in oklch, var(--gray-100), transparent 20%) 1px solid;
+  background-color: color-mix(in oklch, var(--gray-50), transparent);
+}
+
+.metadata-property {
+  &:hover {
+    background-color: var(--gray-50);
+  }
+  &:focus-within {
+    outline: 1px var(--gray-300) solid;
+    box-shadow: unset;
+  }
+}
+
+.status-bar {
+  backdrop-filter: blur(12px);
+}
+
+.multi-select-pill-content {
+  width: 100%;
+  text-wrap: nowrap;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.metadata-property-key {
+  min-width: unset;
+  max-width: 35%;
+  align-self: unset !important;
+  gap: 6px;
+  padding: 6px;
+  justify-content: center;
+  border: none;
+  align-items: center;
+  border-right: 1px solid var(--gray-100);
+}
+.metadata-property-icon,
+.metadata-property-key-input {
+  padding: 0px !important;
+  height: fit-content !important;
+}
+
+.metadata-add-button {
+  width: 100%;
+}
+
+.metadata-property-icon {
+  opacity: 0.5;
+}
+
+.multi-select-container {
+  padding: 0 !important;
+  padding-left: 4px !important;
+}
+
+.metadata-properties {
+  gap: 6px;
+}
+
+.metadata-property-icon {
+  opacity: 1;
+  color: var(--gray-300);
+  // color: var(--purple-400);
+}
+
+.metadata-input-checkbox {
+  background-image: none;
+  border-width: 2px !important;
+}
+
+.metadata-property-value {
+  padding-left: 2px;
+}
+
+.metadata-add-button {
+  color: var(--gray-300);
+  transition: var(--ease-out) 150ms color,
+    var(--ease-out) 150ms background-color;
+  opacity: 1;
+  &:hover {
+    color: var(--gray-500);
+    background-color: var(--gray-100);
+  }
+}

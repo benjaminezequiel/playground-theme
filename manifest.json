@@ -1,7 +1,7 @@
 {
-	"name": "Playground",
-	"version": "0.1.7",
-	"minAppVersion": "1.6.1",
-	"author": "Ezben",
-	"authorUrl": "https://www.benjaminezequiel.com/"
+  "name": "Playground",
+  "version": "0.1.8",
+  "minAppVersion": "1.6.1",
+  "author": "Ezben",
+  "authorUrl": "https://www.benjaminezequiel.com/"
 }

@@ -33,7 +33,6 @@ body {
   --checklist-green-color: var(--green-400);
   --checklist-red-color: var(--red-400);
   --checklist-yellow-color: var(--yellow-500);
-  
 }
 .theme-light {
   --checkbox-color: var(--sea-green-300);
@@ -41,7 +40,11 @@ body {
   --checklist-orange-color: var(--orange-200);
   --checklist-green-color: var(--green-300);
   --checklist-red-color: var(--red-300);
-  --checklist-yellow-color: color-mix(in oklch, var(--yellow-100), var(--orange-200) 20%);
+  --checklist-yellow-color: color-mix(
+    in oklch,
+    var(--yellow-100),
+    var(--orange-200) 20%
+  );
 }
 
 @mixin task-checkbox-base {
@@ -56,9 +59,9 @@ body {
 }
 
 @mixin slash-task($letter) {
-  .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="#{$letter}"], 
   .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="#{$letter}"],
-  ul > li.task-list-item[data-task="#{$letter}"], 
+  .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="#{$letter}"],
+  ul > li.task-list-item[data-task="#{$letter}"],
   ul > li.task-list-item[data-task="#{$letter}"] {
     text-decoration: var(--checklist-done-decoration);
     --checklist-done-color: var(--gray-300);
@@ -81,45 +84,47 @@ body {
   li[data-task="#{$letter}"] > input,
   li[data-task="#{$letter}"] > p > input {
     @include task-checkbox-base;
-    
+
     &:checked {
       color: $color;
       -webkit-mask-image: $icon;
       transform: rotate(#{$rotate}deg);
     }
   }
- 
+
   @if $decorate {
-    .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="#{$letter}"], 
     .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="#{$letter}"],
-    ul > li.task-list-item[data-task="#{$letter}"], 
+    .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="#{$letter}"],
+    ul > li.task-list-item[data-task="#{$letter}"],
     ul > li.task-list-item[data-task="#{$letter}"] {
       text-decoration: var(--checklist-done-decoration);
       --checklist-done-color: var(--gray-300);
       color: var(--checklist-done-color) !important;
     }
-  
   }
 }
 
+input[type="checkbox"]:checked:hover {
+  background-color: var(--gray-600);
+}
+
 @mixin task-type-done() {
-  input[data-task="x"][type=checkbox]:checked,
-  input[data-task="X"][type=checkbox]:checked {
+  input[data-task="x"][type="checkbox"]:checked,
+  input[data-task="X"][type="checkbox"]:checked {
     background-color: transparent;
     border-color: transparent;
-    
+
     &:after {
       @include task-checkbox-base;
       color: var(--checklist-done-color);
       background-color: currentColor;
       -webkit-mask-size: 23px;
       -webkit-mask-image: $icon-done;
-      transform: translate(-1px, -1px);
     }
   }
-  .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="x"], 
+  .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="x"],
   .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="X"],
-  ul > li.task-list-item[data-task="x"], 
+  ul > li.task-list-item[data-task="x"],
   ul > li.task-list-item[data-task="X"] {
     text-decoration: var(--checklist-done-decoration);
     color: var(--gray-300);
@@ -127,11 +132,11 @@ body {
 }
 
 @mixin task-type-quote() {
-  input[data-task=\"], 
+  input[data-task=\"],
   li[data-task=\"] > input,
   li[data-task=\"] > p > input {
     @include task-checkbox-base;
-    
+
     &:checked {
       color: var(--checkbox-quote-color);
       -webkit-mask-image: $icon-quote;
@@ -140,37 +145,35 @@ body {
   }
 }
 
-
-
 body {
-    .theme-dark {
-    --checkbox-quote-color: var(--gray-400)
+  .theme-dark {
+    --checkbox-quote-color: var(--gray-400);
   }
   .theme-light {
-    --checkbox-quote-color: var(--red-300)
+    --checkbox-quote-color: var(--red-300);
   }
   // To-do is native
-  @include task-type('/', var(--gray-400), $icon-incomplete);
+  @include task-type("/", var(--gray-400), $icon-incomplete);
   @include task-type-done();
-  @include task-type('-', var(--gray-400), $icon-canceled, 0, true);
-  @include task-type('>', var(--blue-400), $icon-forwarded);
-  @include task-type('<', var(--gray-400), $icon-scheduled);
-  @include task-type('?', var(--checklist-orange-color), $icon-question);
-  @include task-type('!', var(--checklist-red-color), $icon-important);
-  @include task-type('*', var(--checklist-yellow-color), $icon-star);  
+  @include task-type("-", var(--gray-400), $icon-canceled, 0, true);
+  @include task-type(">", var(--blue-400), $icon-forwarded);
+  @include task-type("<", var(--gray-400), $icon-scheduled);
+  @include task-type("?", var(--checklist-orange-color), $icon-question);
+  @include task-type("!", var(--checklist-red-color), $icon-important);
+  @include task-type("*", var(--checklist-yellow-color), $icon-star);
   @include task-type-quote();
-  @include task-type('l', var(--checklist-red-color), $icon-location);
-  @include task-type('b', var(--blue-400), $icon-bookmark);
-  @include task-type('i', var(--blue-400), $icon-information);
-  @include task-type('S', var(--checklist-green-color), $icon-savings);
-  @include task-type('I', var(--checklist-yellow-color), $icon-idea);
-  @include task-type('p', var(--checklist-green-color), $icon-pro);
-  @include task-type('c', var(--checklist-red-color), $icon-pro, 180);
-  @include task-type('f', var(--checklist-orange-color), $icon-fire);
-  @include task-type('k', var(--checklist-orange-color), $icon-key);
-  @include task-type('w', var(--checklist-yellow-color), $icon-win);
-  @include task-type('u', var(--checklist-green-color), $icon-up);
-  @include task-type('d', var(--checklist-red-color), $icon-up, 180);
+  @include task-type("l", var(--checklist-red-color), $icon-location);
+  @include task-type("b", var(--blue-400), $icon-bookmark);
+  @include task-type("i", var(--blue-400), $icon-information);
+  @include task-type("S", var(--checklist-green-color), $icon-savings);
+  @include task-type("I", var(--checklist-yellow-color), $icon-idea);
+  @include task-type("p", var(--checklist-green-color), $icon-pro);
+  @include task-type("c", var(--checklist-red-color), $icon-pro, 180);
+  @include task-type("f", var(--checklist-orange-color), $icon-fire);
+  @include task-type("k", var(--checklist-orange-color), $icon-key);
+  @include task-type("w", var(--checklist-yellow-color), $icon-win);
+  @include task-type("u", var(--checklist-green-color), $icon-up);
+  @include task-type("d", var(--checklist-red-color), $icon-up, 180);
 }
 
 .task-list-item {

@@ -1,12 +1,11 @@
 body {
-	--h1-font: 'Bricolage Grotesque';
-	--h2-font: 'Bricolage Grotesque';
-	--h3-font: 'Bricolage Grotesque';
-	--h4-font: 'Bricolage Grotesque';
-	--h5-font: 'Bricolage Grotesque';
-	--h6-font: 'Bricolage Grotesque';
-
-	
+  --inline-title-line-height: 105%;
+  --h1-font: "Bricolage Grotesque";
+  --h2-font: "Bricolage Grotesque";
+  --h3-font: "Bricolage Grotesque";
+  --h4-font: "Bricolage Grotesque";
+  --h5-font: "Bricolage Grotesque";
+  --h6-font: "Bricolage Grotesque";
 }
 
 // .el-h1, .el-h2 {
@@ -24,40 +23,39 @@ body {
 // }
 
 .cm-s-obsidian .cm-line.HyperMD-header {
-	padding-bottom: var(--size-2-1);
+  padding-bottom: var(--size-2-1);
 }
 
 .theme-dark {
-	--h1-weight: 550;
-	--h2-weight: 500;
-	--h3-weight: 550;
-	--h4-weight: 650;
-	--h5-weight: 600;
-	--h6-weight: 650;
+  --h1-weight: 550;
+  --h2-weight: 500;
+  --h3-weight: 550;
+  --h4-weight: 650;
+  --h5-weight: 600;
+  --h6-weight: 650;
 
-	--h1-color: var(--purple-400);
-	--h2-color: var(--pink);
-	--h3-color: var(--orange);
-	--h4-color: var(--red);
-	--h5-color: var(--gray-600);
-	--h6-color: var(--gray-600);
-	
+  --h1-color: var(--purple-400);
+  --h2-color: var(--pink);
+  --h3-color: var(--orange);
+  --h4-color: var(--red);
+  --h5-color: var(--gray-600);
+  --h6-color: var(--gray-600);
 }
 
 .theme-light {
-	--h1-weight: 550;
-	--h2-weight: 550;
-	--h3-weight: 600;
-	--h4-weight: 650;
-	--h5-weight: 500;
-	--h6-weight: 600;
+  --h1-weight: 550;
+  --h2-weight: 550;
+  --h3-weight: 600;
+  --h4-weight: 650;
+  --h5-weight: 500;
+  --h6-weight: 600;
 
-	--h1-color: var(--purple-400);
-	--h2-color: var(--pink-300);
-	--h3-color: var(--orange);
-	--h4-color: var(--red);
-	--h5-color: var(--gray-400);
-	--h6-color: var(--gray-400);
+  --h1-color: var(--purple-400);
+  --h2-color: var(--pink-300);
+  --h3-color: var(--orange);
+  --h4-color: var(--red);
+  --h5-color: var(--gray-400);
+  --h6-color: var(--gray-400);
 }
 
 // .markdown-rendered {
@@ -68,25 +66,30 @@ body {
 // 	}
 // }
 
-.cm-header-1, .markdown-rendered h1 {
-	letter-spacing: -0.025em;
+.cm-header-1,
+.markdown-rendered h1 {
+  letter-spacing: -0.025em;
 }
 
-.cm-header-2, .markdown-rendered h2 {
-	letter-spacing: -0.02em;
+.cm-header-2,
+.markdown-rendered h2 {
+  letter-spacing: -0.02em;
 }
 
 .cm-header,
 .inline-title {
-	// TODO: balance not worling on headers for some reason
-	text-wrap: balance;
+  // TODO: balance not worling on headers for some reason
+  font-variation-settings: "opsz" 32;
+  font-kerning: normal;
+  text-wrap: balance;
+  letter-spacing: 1px;
 }
 
-// .markdown-rendered h1, 
-// .markdown-rendered h2, 
-// .markdown-rendered h3, 
-// .markdown-rendered h4, 
-// .markdown-rendered h5, 
+// .markdown-rendered h1,
+// .markdown-rendered h2,
+// .markdown-rendered h3,
+// .markdown-rendered h4,
+// .markdown-rendered h5,
 // .markdown-rendered h6 {
 // 	padding-top: 9px !important;
 // 	font-family: 'Bricolage Grotesque';
@@ -96,36 +99,36 @@ body {
 // 	--p-spacing: 8px;
 // }
 
-
 .cm-formatting-header {
-	color: var(--gray-300);
-	font-weight: 400;
+  color: var(--gray-300);
+  font-weight: 400;
 }
 
 span.cm-formatting-link.cm-formatting-link-end,
 span.cm-formatting-link.cm-formatting-link-start,
 span.cm-formatting-link.cm-link {
-	color: var(--gray-300); 
+  color: var(--gray-300);
 }
 
 span.cm-link-alias-pipe {
-	margin-left: var(--size-2-1);
-	margin-right: var(--size-2-1);
+  margin-left: var(--size-2-1);
+  margin-right: var(--size-2-1);
 }
 
 span.cm-formatting-link-string {
-	margin-right: 1px;
-	margin-left: 1px;
+  margin-right: 1px;
+  margin-left: 1px;
 }
 
 span.cm-formatting-link.cm-formatting-link-start {
-	margin-right: 1px;
+  margin-right: 1px;
 }
 
 span.cm-formatting-link.cm-formatting-link-end {
-	margin-left: 1px;
+  margin-left: 1px;
 }
 
-.cm-comment-start, .cm-comment-end {
-	color: var(--gray-300);
+.cm-comment-start,
+.cm-comment-end {
+  color: var(--gray-300);
 }

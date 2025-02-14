@@ -1,34 +1,33 @@
-@use './utils/var_reference.scss';
+@use "./utils/var_reference.scss";
 
-@use './overrides/general.scss';
-@use './components/headers.scss';
-@use './components/lists.scss';
+@use "./overrides/general.scss";
+@use "./components/headers.scss";
+@use "./components/lists.scss";
 // @use './components/hider.scss';
-@use './components/note.scss';
-@use './components/callouts.scss';
-@use './components/tabs.scss';
-@use './components/menus.scss';
+@use "./components/note.scss";
+@use "./components/callouts.scss";
+@use "./components/tabs.scss";
+@use "./components/menus.scss";
 
-@use './components/table.scss';
+@use "./components/table.scss";
 
-@use './components/canvas.scss';
+@use "./components/canvas.scss";
 
+@use "./components/tag.scss";
+@use "./components/codeblock.scss";
+@use "./components/tasks.scss";
+@use "./components/input.scss";
+@use "./components/properties.scss";
 
-@use './components/tag.scss';
-@use './components/codeblock.scss';
-@use './components/tasks.scss';
-@use './components/input.scss';
-
-@use './plugins/tasks-plugin.scss';
+@use "./plugins/tasks-plugin.scss";
 
 // @use './foundations/type/space_grotesk.scss';
 // @use './foundations/type/inter.scss'; -> already loaded by Obsidian
-@use './foundations/type/bricolage.scss';
+@use "./foundations/type/bricolage.scss";
 
+@use "./foundations/colors/accent_colors.scss";
+@use "./foundations/colors/light_theme.scss";
+@use "./foundations/colors/dark_theme.scss";
 
-@use './foundations/colors/accent_colors.scss';
-@use './foundations/colors/light_theme.scss';
-@use './foundations/colors/dark_theme.scss';
-
-@use './foundations/surface.scss';
-@use './foundations/text.scss';
+@use "./foundations/surface.scss";
+@use "./foundations/text.scss";

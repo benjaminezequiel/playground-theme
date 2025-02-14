@@ -10,4 +10,12 @@
 body {
   --scrollbar-thumb-bg: var(--gray-100);
   --scrollbar-active-thumb-bg: var(--gray-200);
+  --nav-item-background-hover: var(--gray-100);
+}
+
+.search-result-file-matched-text {
+  color: var(--gray-50);
+  padding-left: 1px;
+  padding-right: 1px;
+  border-radius: 2px;
 }
