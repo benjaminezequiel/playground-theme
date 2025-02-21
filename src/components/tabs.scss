@@ -5,9 +5,10 @@ body {
   --tab-radius-active: 0;
 }
 
-.is-hidden-frameless:not(.is-fullscreen) .workspace-tabs.mod-top-left-space .workspace-tab-header-container {
-  padding-left: 0;
-}
+// It might be the reason of the MacOS bug
+// .is-hidden-frameless:not(.is-fullscreen) .workspace-tabs.mod-top-left-space .workspace-tab-header-container {
+//   padding-left: 0;
+// }
 
 .mod-sidedock .workspace-tab-header-container-inner {
   margin: 0;
@@ -20,7 +21,6 @@ body {
     padding-right: var(--size-2-3);
     height: 100%;
   }
-
 }
 .mod-root .workspace-tab-header-container-inner {
   margin: 0;
@@ -29,7 +29,7 @@ body {
 
   padding: 0;
   padding-right: var(--size-4-2);
-  
+
   &:has(.workspace-tab-header.is-active) {
     .workspace-tab-header.is-active {
       border-bottom: 1px solid;
@@ -42,11 +42,10 @@ body {
   &:hover {
     border-radius: var(--radius-s);
   }
-  
 }
 
 .workspace-tab-header-new-tab {
-  margin-bottom: 1px ;
+  margin-bottom: 1px;
 }
 .workspace-tab-header.is-active {
   box-shadow: 0 0 0 var(--tab-outline-width) var(--tab-outline-color) inset;
@@ -58,17 +57,16 @@ body {
   // &:hover {
   //   border-radius: 100px;
   // }
-  
+
   .workspace-tab-header-inner-close-button {
-    color: var(--gray-300)
+    color: var(--gray-300);
   }
 }
 .workspace-tab-header-container {
   padding-left: 0;
-  
+
   padding-right: 0;
   // padding-top: 2px;
-
 }
 .workspace .mod-root .workspace-tab-header {
   padding: var(--size-2-2);
