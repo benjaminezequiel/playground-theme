@@ -2036,12 +2036,12 @@ body {
   --titlebar-background-focused: var(--gray-75);
   --background-modifier-border-focus: var(--gray-400);
   --icon-color: var(--gray-400);
-  --background-secondary-alt: var(--gray-200);
 }
 
 .theme-dark {
   --background-modifier-form-field: var(--gray-25);
   --background-modifier-border-hover: var(--gray-200);
+  --background-secondary-alt: var(--gray-200) !important;
 }
 
 select:focus,
