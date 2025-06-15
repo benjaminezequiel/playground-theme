@@ -1,0 +1,39 @@
+@mixin task-buttons {
+  .contains-task-list.plugin-tasks-query-result {
+    .tasks-edit {
+      max-height: 0;
+      opacity: 0;
+      width: fit-content;
+      height: fit-content;
+
+      &::before {
+        content: "EDIT";
+        font-size: var(--font-smallest);
+        color: var(--gray-400);
+        font-weight: 600;
+        margin-right: 4px;
+      }
+      &::after {
+        content: "";
+      }
+    }
+
+    .tasks-postpone {
+      max-height: 0;
+      opacity: 0;
+      width: fit-content;
+      height: fit-content;
+      &::before {
+        content: "POSTPONE";
+        font-size: var(--font-smallest);
+        color: var(--gray-400);
+        font-weight: 600;
+        margin-right: 4px;
+      }
+      &::after {
+        content: "";
+        // font-size: var(--font-smallest);
+      }
+    }
+  }
+}

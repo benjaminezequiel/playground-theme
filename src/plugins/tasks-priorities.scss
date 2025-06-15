@@ -1,0 +1,60 @@
+@mixin task-priorities {
+  .contains-task-list.plugin-tasks-query-result .tasks-list-text {
+    [data-task-priority="highest"],
+    [data-task-priority="high"],
+    [data-task-priority="medium"],
+    [data-task-priority="low"],
+    [data-task-priority="lowest"] {
+      order: 1;
+
+      > * {
+        display: none;
+      }
+    }
+
+    [data-task-priority="highest"] {
+      &::before {
+        content: "Highest";
+        color: var(--red-900);
+      }
+      background-color: var(--red-300);
+      outline: var(--red-300) 1px solid;
+    }
+
+    [data-task-priority="high"] {
+      &::before {
+        content: "High";
+        color: var(--orange-900);
+      }
+      background-color: var(--orange-400);
+      outline: var(--orange-400) 1px solid;
+    }
+
+    [data-task-priority="medium"] {
+      &::before {
+        content: "Medium";
+        color: var(--yellow-100);
+      }
+      background-color: var(--yellow-600);
+      outline: var(--yellow-600) 1px solid;
+    }
+
+    [data-task-priority="low"] {
+      &::before {
+        content: "Low";
+        color: var(--blue-900);
+      }
+      background-color: var(--blue-200);
+      outline: var(--blue-300) 1px solid;
+    }
+
+    [data-task-priority="lowest"] {
+      &::before {
+        content: "Lowest";
+        color: var(--gray-900);
+      }
+      background-color: var(--gray-200);
+      outline: var(--gray-300) 1px solid;
+    }
+  }
+}
