@@ -75,7 +75,6 @@
     &[data-task="x"]:not(:hover) {
       .tasks-list-text > :not(.task-description),
       .tasks-backlink {
-        opacity: 0.5;
         display: inline;
       }
 
