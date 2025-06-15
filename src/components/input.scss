@@ -1,14 +1,14 @@
 body {
-
 }
 .search-input-container {
   --search-icon-size: 16px;
-  
+
   input {
-    // background-color: red;
     padding: var(--size-4-1) var(--size-4-2);
     padding-inline-start: 30px;
-    border-radius: 32px;
+    border: 1px solid var(--gray-100);
+    border-radius: 6px;
+
     &::placeholder {
       opacity: 0.5;
     }

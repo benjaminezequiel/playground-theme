@@ -16,10 +16,18 @@ body {
 
   height: 100%;
 
+  .workspace-tab-header.is-active {
+    background-color: var(--gray-200);
+  }
+
   .workspace-tab-header .workspace-tab-header-inner {
     padding-left: var(--size-2-3);
     padding-right: var(--size-2-3);
     height: 100%;
+  }
+
+  .workspace-tab-header-inner-icon {
+    color: var(--gray-300);
   }
 }
 .mod-root .workspace-tab-header-container-inner {
