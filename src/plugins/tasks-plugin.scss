@@ -102,13 +102,6 @@
       justify-self: center;
     }
 
-    .tasks-postpone,
-    .tasks-edit,
-    .tasks-backlink {
-      opacity: 1 !important;
-      max-height: unset !important;
-    }
-
     .tasks-list-text {
       display: flex;
       flex-wrap: wrap;
@@ -171,6 +164,13 @@
 
     .task-description {
       width: 100%;
+    }
+
+    .tasks-postpone,
+    .tasks-edit,
+    .tasks-backlink {
+      opacity: 1 !important;
+      max-height: unset !important;
     }
 
     .tasks-list-text {
