@@ -27,6 +27,7 @@ body {
       color: var(--callout-title-color);
     }
 
+    // Specific fix for PDF exports with nested callouts
     .callout-content {
       flex-direction: column;
     }
