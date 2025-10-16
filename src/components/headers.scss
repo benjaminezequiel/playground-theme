@@ -6,6 +6,7 @@ body {
   --h4-font: "Bricolage Grotesque";
   --h5-font: "Bricolage Grotesque";
   --h6-font: "Bricolage Grotesque";
+  --header-height: var(--size-4-10) !important;
 }
 
 // .el-h1, .el-h2 {
@@ -135,4 +136,8 @@ span.cm-formatting-link.cm-formatting-link-end {
 
 .titlebar-button-container {
   color: var(--gray-200);
+}
+
+.workspace-tab-header-container {
+  --frame-left-space: calc(68px - var(--ribbon-width)) !important;
 }
