@@ -141,3 +141,7 @@ span.cm-formatting-link.cm-formatting-link-end {
 .workspace-tab-header-container {
   --frame-left-space: calc(68px - var(--ribbon-width)) !important;
 }
+
+.mod-macos {
+  --frame-left-space: calc(68px - var(--ribbon-width)) !important;
+}
