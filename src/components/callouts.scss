@@ -27,6 +27,10 @@ body {
       color: var(--callout-title-color);
     }
 
+    .callout-content {
+      flex-direction: column;
+    }
+
     .callout-content p {
       color: var(--callout-content);
       margin: 0;
