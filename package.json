@@ -1,6 +1,6 @@
 {
   "name": "Playground",
-  "version": "0.1.17",
+  "version": "0.1.18",
   "scripts": {
     "version": "node version-bump.mjs && git add manifest.json versions.json"
   }
