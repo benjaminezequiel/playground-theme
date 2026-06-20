@@ -19,3 +19,14 @@ body {
   --red-rgb: 218, 1, 77;
   --pink-rgb: 242, 66, 255;
 }
+
+body {
+  --color-red: var(--red);
+  --color-orange: var(--orange);
+  --color-yellow: var(--yellow);
+  --color-green: var(--green);
+  --color-cyan: var(--cyan);
+  --color-blue: var(--blue);
+  --color-purple: var(--purple);
+  --color-pink: var(--pink);
+}
