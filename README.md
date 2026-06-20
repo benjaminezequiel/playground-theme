@@ -6,15 +6,18 @@ A modern, playful Obsidian theme focused on visual hierarchy and clean typograph
 ![theme_screenshot_01](/docs/screenshot01.png)
 
 ### Key features:
+
 - Distinctive gradient-colored headers from purple to orange for clear document structure
 - Enhanced callouts with improved visual hierarchy and custom styling
 - Aligned task lists and bullet points
-- Clean and modern typography 
+- Clean and modern typography
 - High contrast colors
 
 Support includes both desktop and mobile platforms, making it ideal for users who want a consistent experience across devices.
 
-> [!IMPORTANT] 
+![theme_screenshot_01](/docs/screenshot03.png)
+
+> [!IMPORTANT]
 > This theme is a work in progress! There is additional customization options planned through `cssClasses`, including enhanced Dataview tables and Tasks plugin styling (custom task statuses and query visualization).
 
 ---
